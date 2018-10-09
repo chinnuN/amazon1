@@ -11,7 +11,7 @@ pipeline {
 				}
 			stage ('definescript') {
 				steps {
-				sh 'sshpass -p "chinnu143" scp target/amazon1.war sonu@172.17.0.2:/home/sonu/software/apache-tomcat-8.5.23'
+				sh 'sshpass -p "chinnu143" scp target/amazon1.war sonu@172.17.0.2:/home/sonu/software/apache-tomcat-8.5.23/webapps'
 				}
 			stage ('serverstart') {
 				steps { 
